@@ -32,4 +32,4 @@ Para la última tarea, para que se ejecute cada hora la copia del directorio /va
 
 ![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/configuracioncrontab.png)
 
-Lo he hecho así para que el primer 00 se haga a todas las horas en punto, ya que tengo puesto con los "*" que se haga a todas las horas, todos los días, todos los días del mes, todos los días de la semana, todos los meses. Y la misma orden que he usado antes con el rsync, solo que le añado --delete para que lo que se borre también se refleje en la máquina 2.
+Lo he hecho así para que el primer 00 se haga a todas las horas en punto, ya que tengo puesto con los "*" que se haga a todas las horas, todos los días, todos los días del mes, todos los días de la semana, todos los meses, y mediante el usuario root. Y la misma orden que he usado antes con el rsync, solo que le añado --delete para que lo que se borre también se refleje en la máquina 2.
