@@ -21,3 +21,9 @@ Compruebo que se ha copiado bien el directorio en la máquina 2 con el comando l
 ![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/comprobacioncopiarsyncenM2.png)
 
 Ahora, para poder acceder a SSH sin contraseña, generamos las claves dsa en la Máquina 2 para poder acceder a la Máquina 1 sin contraseña. Las generamos de la siguiente manera: 
+
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/creaciondsa.png)
+
+Una vez creadas, las copiamos a la Máquina 1 para que reconozca esta máquina mediante el archivo authorized_keys. Una vez hecho esto podremos acceder al root de la Máquina 1 sin necesidad de introducir contraseña. La ejecución de esto está en la siguiente imagen:
+
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/copiadsaaM1ycomprobacionfuncionamiento.png)
