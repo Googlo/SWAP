@@ -8,4 +8,14 @@ Se hace de la siguiente manera:
 
 ![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/ejecucionordensshM1.png)
 
+Compruebo que se ha copiado bien en la máquina 2 después de utilizar el comando anterior de la siguiente manera:
 
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/comprobacionfuncionamientosshM2.png)
+
+Ahora, procedo a copiar el directorio /var/www/ de la máquina 1 en la máquina 2, y para ello utilizo el comando que se especifica en la práctica de la siguiente manera:
+
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/ejecucionrsyncm2.png)
+
+Compruebo que se ha copiado bien el directorio en la máquina 2 con el comando ls tal y como se especifica en la práctica también:
+
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/comprobacioncopiarsyncenM2.png)
