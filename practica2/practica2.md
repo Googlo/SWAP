@@ -27,3 +27,9 @@ Ahora, para poder acceder a SSH sin contraseña, generamos las claves dsa en la 
 Una vez creadas, las copiamos a la Máquina 1 para que reconozca esta máquina mediante el archivo authorized_keys. Una vez hecho esto podremos acceder al root de la Máquina 1 sin necesidad de introducir contraseña. La ejecución de esto está en la siguiente imagen:
 
 ![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/copiadsaaM1ycomprobacionfuncionamiento.png)
+
+Para la última tarea, para que se ejecute cada hora la copia del directorio /var/www/ configuro el archivo /etc/crontab/ de la siguiente manera:
+
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/configuracioncrontab.png)
+
+Lo he hecho así para que el primer 00 se haga a todas las horas en punto, ya que tengo puesto con los "*" que se haga a todas las horas, todos los días, todos los días del mes, todos los días de la semana, todos los meses. Y la misma orden que he usado antes con el rsync, solo que le añado --delete para que lo que se borre también se refleje en la máquina 2.
