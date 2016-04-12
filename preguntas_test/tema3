@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Cual de las siguientes respuestas no pertenece al proceso de configurar la red de un sistema web?</enunciado>
+  <opcionA>Elegir el modelo de red más adecuado.</opcionA>
+  <opcionB>Elegir el hardware.</opcionB>
+  <opcionC>Estructurar la red aislando subredes.</opcionC>
+  <opcionD>Elegir la situación del servidor en la empresa.</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cual de las siguientes no es una alternativa para conectar la granja web a otras redes?</enunciado>
+  <opcionA>Configuración de DMZ simple.</opcionA>
+  <opcionB>Configuración sin DMZ.</opcionB>
+  <opcionC>Configuración WiFi.</opcionC>
+  <opcionD>Configuración de DMZ doble.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
