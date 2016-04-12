@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Qué es una granja web?</enunciado>
+  <opcionA>Conjunto de servidores dedicados a servir contenido web a los usuarios finales.</opcionA>
+  <opcionB>Muchas páginas web juntas.</opcionB>
+  <opcionC>Muchas páginas web almacenadas en un mismo servidor. Al único servidor se le llama granja web.</opcionC>
+  <opcionD>Servidores que ser guardan en granjas de cerdos al aire libre para mantener la temperatura y no necesitar sistemas de refrigeración.</opcionD>
+  <solucion>A</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál de los siguientes supuestos no sería parte de un sitio web mal planificado?</enunciado>
+  <opcionA>Hace falta un cambio de la Base de Datos.</opcionA>
+  <opcionB>El servidor no es seguro.</opcionB>
+  <opcionC>Hay una máquina servidor replicada.</opcionC>
+  <opcionD>Hay que comprar otra máquina.</opcionD>
+  <solucion>C</solucion>
+</pregunta>

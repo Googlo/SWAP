@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Mejor forma de mejorar la disponibilidad:</enunciado>
+  <opcionA>Utilizar elementos redundantes (2 CPU's, 2 memorias...)</opcionA>
+  <opcionB>Revisar diariamente el hardware del sistema abriendo los servidores.</opcionB>
+  <opcionC>Cambiar los elementos del sistema cada X tiempo antes de que se rompan.</opcionC>
+  <opcionD>Tenerlos trabajando a pocas revoluciones.</opcionD>
+  <solucion>A</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Qué es la escalabilidad?</enunciado>
+  <opcionA>El incremento del nivel de estrés.</opcionA>
+  <opcionB>El incremento del número de máquinas.</opcionB>
+  <opcionC>La capacidad de un sistema de manejar la carga y adaptarse a un nuevo nivel de carga.</opcionC>
+  <opcionD>Optimización del código para poder meter más máquinas en el sistema.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
