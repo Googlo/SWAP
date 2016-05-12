@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Cual de las siguientes no es una tecnología similar al balanceo de carga?</enunciado>
+  <opcionA>Balanceo de carga en cortafuegos.</opcionA>
+  <opcionB>Balanceo de carga en router.</opcionB>
+  <opcionC>Clustering</opcionC>
+  <opcionD>Balanceo de carga Global</opcionD>
+  <solucion>B</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuando es adecuado el algoritmo de balanceo basado en turnos?</enunciado>
+  <opcionA>Cuando todas las máquinas están en la misma localización.</opcionA>
+  <opcionB>Si todas las máquinas tienen una potencia similar o bien vamos a servir aplicaciones o servicios sencillos.</opcionB>
+  <opcionC>Cuando hay pocas máquinas.</opcionC>
+  <opcionD>Cuando sólo hay una máquina.</opcionD>
+  <solucion>B</solucion>
+</pregunta>
