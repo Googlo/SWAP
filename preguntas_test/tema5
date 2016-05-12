@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Cuáles de estas opciones no influyen en la cantidad de sesiones de usuario TCP que puede manejar el balanceador al mismo tiempo?</enunciado>
+  <opcionA>Memoria.</opcionA>
+  <opcionB>Procesador.</opcionB>
+  <opcionC>Alimentación.</opcionC>
+  <opcionD>Ninguna de las anteriores.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿En qué se mide el rendimiento de un Balanceador de Carga?</enunciado>
+  <opcionA>En Megabytes por segundo.</opcionA>
+  <opcionB>En Megabytes por minuto.</opcionB>
+  <opcionC>En bits por minuto.</opcionC>
+  <opcionD>En bits por segundo.</opcionD>
+  <solucion>D</solucion>
+</pregunta>
