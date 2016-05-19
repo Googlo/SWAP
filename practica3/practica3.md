@@ -1,35 +1,28 @@
-#Práctica 2
+#Práctica 3
 
-##Resolución de la práctica paso a paso.
+##Resolución de la práctica.
 
-Primero, pasamos de una máquina a otra un fichero comprimido mediante ssh y comprimido mediante la orden tar. 
-Para ello, antes de ejecutar la orden que se especifica en las prácticas, he creado un directorio llamado prueba, que será el directorio que comprima para enviar a la otra máquina. 
-Se hace de la siguiente manera:
+Instalando Nginx he tenido problemas con la versión 15.04 de Ubuntu Server, por lo que he tenido que hacer el balanceador con una máquina que contuviera como SO Ubuntu Server 12.04. Al poner este nuevo SO no he tenido ningún problema al instalar.
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/ejecucionordensshM1.png)
+Una vez instalado Nginx, reinicio el servicio para comprobar que no hay ningún error y uso el comando "curl" para comprobar que puede ver el balanceador a las otras 2 máquinas, como está representado en la siguiente imagen:
 
-Compruebo que se ha copiado bien en la máquina 2 después de utilizar el comando anterior de la siguiente manera:
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra31.png)
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/comprobacionfuncionamientosshM2.png)
+Suponemos que es más potente la máquina 2, por lo que le asigno un peso de 2 y a la máquina 1 un peso de 1. En la siguiente imagen podemos ver cómo queda la configuración del balanceador:
 
-Ahora, procedo a copiar el directorio /var/www/ de la máquina 1 en la máquina 2, y para ello utilizo el comando que se especifica en la práctica de la siguiente manera:
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra32.png)
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/ejecucionrsyncm2.png)
+Ahora, comprobamos que está funcionando bien el balanceador y está balanceando como hemos dicho según los pesos. He cambiado también el index.html de las dos máquinas para que se pueda ver cuándo está sirviendo la petición una máquina y cuando la está sirviendo la otra. Como se puede ver en la siguiente imagen, alterna 2 peticiones a la máquina 2 y 1 petición a la máquina 1, de forma que está haciendo caso a lo que hemos interpuesto con las direcctrices "weight".
 
-Compruebo que se ha copiado bien el directorio en la máquina 2 con el comando ls tal y como se especifica en la práctica también:
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra33.png)
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/comprobacioncopiarsyncenM2.png)
+Procedo ahora a instalar Haproxy, y lo llevo a cabo sin ningún problema. No sin antes parar la ejecución de nginx, para que no haya problemas entre ellos, ya que escuchan desde el mismo puerto (el 80). 
 
-Ahora, para poder acceder a SSH sin contraseña, generamos las claves dsa en la Máquina 2 para poder acceder a la Máquina 1 sin contraseña. Las generamos de la siguiente manera: 
+Después, la configuración del Haproxy queda así:
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/creaciondsa.png)
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra34.png)
 
-Una vez creadas, las copiamos a la Máquina 1 para que reconozca esta máquina mediante el archivo authorized_keys. Una vez hecho esto podremos acceder al root de la Máquina 1 sin necesidad de introducir contraseña. La ejecución de esto está en la siguiente imagen:
+Ejecutamos haproxy y comprobamos que está alternando las dos máquinas cuando se hacen peticiones a la dirección IP del balanceador:
 
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/copiadsaaM1ycomprobacionfuncionamiento.png)
+![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra35.png)
 
-Para la última tarea, para que se ejecute cada hora la copia del directorio /var/www/ configuro el archivo /etc/crontab/ de la siguiente manera:
-
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica2/configuracioncrontab.png)
-
-Lo he hecho así para que el primer 00 se haga a todas las horas en punto, ya que tengo puesto con los "*" que se haga a todas las horas, todos los días, todos los días del mes, todos los días de la semana, todos los meses, y mediante el usuario root. Y la misma orden que he usado antes con el rsync, solo que le añado --delete para que lo que se borre también se refleje en la máquina 2.
