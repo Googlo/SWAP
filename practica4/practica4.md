@@ -60,10 +60,5 @@ Estos son los resultados tras 5 ejecuciones:
 |**Media**  |**0,5426**                |**0**            |**1843,0**           |
 
 
-
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra34.png)
-
-Ejecutamos haproxy y comprobamos que está alternando las dos máquinas cuando se hacen peticiones a la dirección IP del balanceador:
-
-![imagen](https://github.com/Googlo/SWAP/blob/master/practica3/imgpra35.png)
+Se puede ver cómo los tiempos se reducen sin usar el balanceador de carga, ya que las peticiones van directamente al servidor. Era de esperar desde un principio que obtuviéramos resultados similares a estos.
 
